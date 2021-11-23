@@ -2,6 +2,6 @@
   "name": "script",
   "version": "1.0.0",
   "dependencies": {
-    "discord.js": " "
+    "discord.js": "13.3.1"
   }
 }
