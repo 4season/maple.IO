@@ -1,5 +1,4 @@
 const fs = require('fs');
-const aws = require('aws-sdk');
 const { Client, Intents, Collection } = require('discord.js');
 let token = process.env.token;
 
