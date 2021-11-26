@@ -1,4 +1,5 @@
 const fs = require('fs');
+const aws = require('aws-sdk');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { clientId, guildId } = require('./config.json');

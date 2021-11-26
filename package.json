@@ -12,7 +12,9 @@
   },
   "description": "Input and Output of MapleStory.\r For discord Bot.",
   "main": "deploy-commands.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "aws-sdk": "^2.1036.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
