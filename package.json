@@ -2,7 +2,7 @@
   "name": "maple.io",
   "version": "1.0.0",
   "engines": {
-    "node": "16.x"
+    "node": "17.x"
   },
   "dependencies": {
     "@discordjs/builders": "^0.8.2",
