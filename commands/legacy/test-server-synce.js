@@ -7,8 +7,7 @@ module.exports = {
         .setName('시간알림')
         .setDescription('Replies with Pong!'),
     async execute(interaction) {
-        const msgTnt = interaction.content();
-        const msgStr = msgTnt.split(" ");
+        const msgStr = interaction.split(" ");
         if (msgStr[1] === " ") {
             await interaction.reply('ON / OFF 로 설정을 변경하실수 있습니다.');
             await interaction.send(`현제상태 '${switching_time[0].switch}'`);
