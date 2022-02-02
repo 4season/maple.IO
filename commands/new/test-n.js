@@ -4,6 +4,7 @@ const { request } = require('request');
 const { cheerio } = require('cheerio');
 const { fs } = require('fs');
 
+/*
 const exampleEmbed = new MessageEmbed()
     .setColor('#0099ff')
     .setTitle('Some title')
@@ -21,6 +22,7 @@ const exampleEmbed = new MessageEmbed()
     .setImage('https://i.imgur.com/AfFp7pu.png')
     .setTimestamp()
     .setFooter({ text: 'Some footer text here', iconURL: 'https://i.imgur.com/AfFp7pu.png' });
+*/
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -28,6 +30,6 @@ module.exports = {
         .setDescription('공지사항 목록을 출력합니다.'),
     async execute(interaction) {
         await interaction.reply('Success!');
-        await interaction.send({ embeds: [exampleEmbed] });
+        //await interaction.send({ embeds: [exampleEmbed] });
     },
 };
