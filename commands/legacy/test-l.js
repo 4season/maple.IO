@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { moment } = require('moment');
-const { moment_TZ } = require('moment-timezone');
+require('moment-timezone');
 
 const timezoneGet = new Date();
 const timezoneGet_time = timezoneGet.getTime();
@@ -14,7 +14,7 @@ const hourGet = timeFormat_KST.getHours();
 const minuteGet = timeFormat_KST.getMinutes();
 const secondGet = timeFormat_KST.getSeconds();
 
-const MTZ = moment_TZ.tz.setDefault("Asia/Seoul");
+const MTZ = moment.tz.setDefault("Asia/Seoul");
 console.log(`${MTZ()}`);
 
 const dayList = ["월", "화", "수", "목", "금", "토", "일"]; //1, 2, 3, 4, 5, 6, 0
