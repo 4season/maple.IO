@@ -1,5 +1,6 @@
 const fs = require('fs');
 const { Client, Intents, Collection } = require('discord.js');
+const { moment } = require('moment'); require('moment-timezone');
 let token = process.env.token;
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
