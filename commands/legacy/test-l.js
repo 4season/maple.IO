@@ -1,11 +1,11 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { moment } = require('moment');
 require('moment-timezone');
-moment.tz.setDefault("Asia/Seoul");
+//moment.tz.setDefault("Asia/Seoul");
 
 const timezoneGet = new Date();
 const timezoneGet_time = timezoneGet.getTime();
-const timezoneSet = timezoneGet.setTime(timezoneGet_time+(9*60*60*1000));
+const timezoneSet = timezoneGet.setTime(timezoneGet_time+(9*60*1000));
 const timeFormat_KST = new Date(timezoneSet);
 const yearGet = timeFormat_KST.getFullYear();
 const monthGet = timeFormat_KST.getMonth();
