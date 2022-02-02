@@ -1,4 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { moment } = require('moment-timezone');
 
 const timezoneGet = new Date();
 const timezoneGet_time = timezoneGet.getTime();
@@ -12,6 +13,8 @@ const hourGet = timeFormat_KST.getHours();
 const minuteGet = timeFormat_KST.getMinutes();
 const secondGet = timeFormat_KST.getSeconds();
 const millisecondGet = timeFormat_KST.getMilliseconds();
+
+console.log(`${moment()}`);
 
 const dayList = ["월", "화", "수", "목", "금", "토", "일"]; //1, 2, 3, 4, 5, 6, 0
 const day_toString = ( ) => {
