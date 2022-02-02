@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { moment } = require('moment-timezone');
+const { moment } = require('moment');
 
 const timezoneGet = new Date();
 const timezoneGet_time = timezoneGet.getTime();
@@ -12,7 +12,6 @@ const dayGet = timeFormat_KST.getDay();
 const hourGet = timeFormat_KST.getHours();
 const minuteGet = timeFormat_KST.getMinutes();
 const secondGet = timeFormat_KST.getSeconds();
-const millisecondGet = timeFormat_KST.getMilliseconds();
 
 console.log(`${moment()}`);
 
@@ -20,13 +19,11 @@ const dayList = ["월", "화", "수", "목", "금", "토", "일"]; //1, 2, 3, 4,
 const day_toString = ( ) => {
 
     if (dayGet === 0) {
-        const data_A = dayList[6];
-        return data_A;
+        return dayList[6];
     }
     else {
         const dayMatch = dayGet - 1;
-        const data_B = dayList[dayMatch];
-        return data_B;
+        return dayList[dayMatch];
     }
 }
 
