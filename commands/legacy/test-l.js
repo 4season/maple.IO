@@ -2,8 +2,6 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { moment } = require('moment');
 require('moment-timezone');
 //moment.tz.setDefault("Asia/Seoul");
-let Moment = moment.locale();
-console.log(Moment);
 
 const timezoneGet = new Date();
 const timezoneGet_time = timezoneGet.getTime();
