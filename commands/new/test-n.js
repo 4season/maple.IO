@@ -28,6 +28,6 @@ module.exports = {
         .setDescription('공지사항 목록을 출력합니다.'),
     async execute(interaction) {
         await interaction.reply('Success!');
-        await channel.send({ embeds: [exampleEmbed] });
+        await interaction.send({ embeds: [exampleEmbed] });
     },
 };
