@@ -13,8 +13,8 @@ const hourGet = timeFormat_KST.getHours();
 const minuteGet = timeFormat_KST.getMinutes();
 const secondGet = timeFormat_KST.getSeconds();
 
-const Moment = moment.tz.setDefault("Asia/Seoul");
-console.log(Moment);
+moment.tz.setDefault("Asia/Seoul");
+console.log(`${moment()}`);
 
 const dayList = ["월", "화", "수", "목", "금", "토", "일"]; //1, 2, 3, 4, 5, 6, 0
 const day_toString = ( ) => {
